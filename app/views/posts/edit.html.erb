@@ -1,0 +1,12 @@
+<% content_for :title, "Editing post" %>
+
+<h1>Editing Tweet</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div>
+  <%= link_to "Details", @post,class: "btn btn-outline-primary" %> |
+  <%= link_to "Back to tweets", posts_path,class: "btn btn-outline-primary" %>
+</div>

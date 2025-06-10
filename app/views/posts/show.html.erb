@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text"><%= render @post %></p>
+    
+    <a href="#" class="card-link"><%= link_to "Edit ", edit_post_path(@post),class: "btn btn-outline-primary" %></a>
+    <a href="#" class="card-link"><%= link_to "Back to tweets", posts_path,class: "btn btn-outline-primary" %></a>
+    <%= button_to "Destroy this post", @post, method: :delete,class: "btn btn-danger"%>
+  </div>
+</div>
